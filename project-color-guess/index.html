@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the color</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="main-container">
+    <h1 id="title" class="title">Try to guess which color is this:</h1>
+    <p id="rgb-color" class="rgb-color"></p>
+    <div id="ballsContainer" class="ballContainer">
+      <div class="ball"></div>
+      <div class="ball"></div>
+      <div class="ball"></div>
+      <div class="ball"></div>
+      <div class="ball"></div>
+      <div class="ball"></div>
+    </div>
+    <p id="answer" class="answer"></p>
+    <div class="reset-score-container">
+      <button id="reset-game" class="reset-game">Reset game</button>
+      <div class="score">
+        <p>Your score is:</p>
+        <p id="score">0</p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

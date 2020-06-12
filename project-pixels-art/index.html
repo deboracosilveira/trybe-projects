@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixels Art</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<!-- Color palette -->
+  <h1 id="title">Paleta de Cores</h1>
+  <section id="color-palette" class="color-palette">
+    <div class="color" onclick="box1Selected()"></div><div class="color" onclick="box2Selected()"></div><div class="color" onclick="box3Selected()"></div><div class="color" onclick="box4Selected()"></div>
+  </section>
+<!-- Input e button -->
+  <button id="clear-board" class="clear-board">Limpar quadro</button>
+  <form class="form">
+    <label for="board-size">Escolha o tamanho do quadro</label><br>
+    <input id="board-size" class="board-size" type="text" placeholder="Digete um valor entre 5 e 50">
+  </form>
+  <button id="generate-board" class="generate-board">Gerar quadro</button>
+<!-- Pixels box -->
+  <div class="board">
+    <section id="pixel-board" class="pixel-board">
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+      <div class="pixel"></div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

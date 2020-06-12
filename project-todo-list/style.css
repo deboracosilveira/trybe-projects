@@ -1,0 +1,11 @@
+.selected {
+  background-color: gray;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.lista-tarefas {
+  cursor: pointer;
+}

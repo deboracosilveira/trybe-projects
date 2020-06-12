@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meme generator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Make your own meme!</h1>
+  <p>A small explanation about the website functionality goes here</p>
+<!-- Text section -->
+  <div>
+    <form>
+      <label for="text-input">Insert your text here:</label><br>
+      <input type="text" id="text-input" class="text-input" name="text-input" oninput="writeOnImg();" maxlength="60" placeholder="You text must be less than or equal to 60 characters">
+    </form>
+  </div>
+<!-- Image upload section  -->
+  <div class="meme-upload">
+    <form>
+      <label for="meme-insert">Choose your image</label><br>
+      <input type="file" id="meme-insert" class="meme-insert" name="meme-insert">
+    </form>
+  </div>
+<!-- Border buttons -->
+  <div>
+    <label>Choose your border type</label><br>
+    <button id="button1" class="button1">Border 1</button>
+    <button id="button2" class="button2">Border 2</button>
+    <button id="button3" class="button3">Border 3</button>
+  </div>
+<!-- Meme section -->
+  <div class=container>
+    <label class="labelMeme">Use famous memes:</label><br>
+    <section id="meme-image-container" class="meme-image-container">
+      <img id="meme-image" class="meme-image" src="" alt="User image">
+      <p id="meme-text" class="meme-text"></p>
+    </section>
+<!-- Famous memes -->
+    <section class="famous-memes">
+      <img id="meme-1" class="image-1" src="imgs/meme1.jpeg" alt="Nazare thinking">
+      <img id="meme-2" class="image-2" src="imgs/meme2.jpeg" alt="Gavin boy">
+      <img id="meme-3" class="image-3" src="imgs/meme3.jpeg" alt="Girl laughing">
+      <img id="meme-4" class="image-4" src="imgs/meme4.jpeg" alt="Chloe">
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
