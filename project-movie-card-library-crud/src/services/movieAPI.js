@@ -6,14 +6,13 @@ const readMovies = () => JSON.parse(localStorage.getItem('movies'));
 
 const saveMovies = (movies) => localStorage.setItem('movies', JSON.stringify(movies));
 
-export const getMovies = () => (
+export const getMovies = () =>
   new Promise((resolve) => {
     setTimeout(() => {
       const movies = readMovies();
       resolve(movies);
     }, 2000);
-  })
-);
+  });
 
 export const getMovie = (movieId) => {
   const movie = readMovies().find((mov) => mov.id === parseInt(movieId, 10));
