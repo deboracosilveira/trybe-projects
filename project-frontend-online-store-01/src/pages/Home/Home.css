@@ -1,0 +1,32 @@
+.search-and-cart {
+  align-items: center;
+  background-color: whitesmoke;
+  display: flex;
+  flex-flow: nowrap;
+  height: 80px;
+  justify-content: space-around;
+}
+
+.shopping-cart-icon {
+  margin-left: 300px;
+  zoom: 2.5;
+}
+
+.faShoppingCart {
+  color: black;
+}
+
+.main-container {
+  display: flex;
+}
+
+.categories {
+  border: 1px solid black;
+  padding: 5px;
+  width: 30%;
+}
+
+.products-list {
+  padding: 5px;
+  width: 70%;
+}
