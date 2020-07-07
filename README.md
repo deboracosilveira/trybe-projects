@@ -20,16 +20,20 @@ The program has more than **1,500 hours** of classroom and online classes and co
 #### CSS Flexbox
 - *[Project - Facebook home](https://deboracosilveira.github.io/facebook/)*
 #### JavaScript ES6 & Unit Tests
-- *[Project - JavaScript Unit Tests](https://github.com/deboracosilveira/projects_trybe/tree/master/project-js-unit-tests)*
+- *[Project - JavaScript Unit Tests](https://github.com/deboracosilveira/projects_trybe/tree/master/project-08-js-unit-tests)*
 #### JavaScript ES6
-- *[Project - Zoo functions](https://github.com/deboracosilveira/projects_trybe/tree/master/project-zoo-functions)*
+- *[Project - Zoo functions](https://github.com/deboracosilveira/projects_trybe/tree/master/project-09-zoo-functions)*
 #### Asynchronicity & Callbacks
-- *[Project - Shopping Cart](https://github.com/deboracosilveira/projects_trybe/tree/master/project-shopping-cart)*
+- *[Project - Shopping Cart](https://github.com/deboracosilveira/projects_trybe/tree/master/project-10-shopping-cart)*
 #### Asynchronous Jest and Mocking
-- *[Project - Asynchronous Jest and Mocking](https://github.com/deboracosilveira/projects_trybe/tree/master/project-jest)*
+- *[Project - Asynchronous Jest and Mocking](https://github.com/deboracosilveira/projects_trybe/tree/master/project-11-jest)*
 #### Introduction - React Components
-- *[Project - Movie Cards Library](https://github.com/deboracosilveira/projects_trybe/tree/master/project-movie-cards-library)*
+- *[Project - Movie Cards Library](https://github.com/deboracosilveira/projects_trybe/tree/master/project-12-movie-cards-library)*
 #### React events and forms
-- *[Project - Movie Cards Library Stateful](https://github.com/deboracosilveira/projects_trybe/tree/master/project-movie-card-library-stateful)*
-#### Block 13: React life cycle and Router
-- *[Project - Movie Cards Library CRUD](https://github.com/deboracosilveira/projects_trybe/tree/master/project-movie-card-library-crud)*
+- *[Project - Movie Cards Library Stateful](https://github.com/deboracosilveira/projects_trybe/tree/master/project-13-movie-card-library-stateful)*
+#### React life cycle and Router
+- *[Project - Movie Cards Library CRUD](https://github.com/deboracosilveira/projects_trybe/tree/master/project-14-movie-card-library-crud)*
+#### React and Agile Methodologies
+- *[Project - Frontend Online Store](https://github.com/deboracosilveira/projects_trybe/tree/master/project-15-frontend-online-store-01)*
+#### React Testing Library
+- *[Project - React Tests](https://github.com/deboracosilveira/projects_trybe/tree/master/project-16-react-testing-library)*
