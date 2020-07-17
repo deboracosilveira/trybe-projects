@@ -37,3 +37,5 @@ The program has more than **1,500 hours** of classroom and online classes and co
 - *[Project - Frontend Online Store](https://github.com/deboracosilveira/projects_trybe/tree/master/project-15-frontend-online-store-01)*
 #### React Testing Library
 - *[Project - React Tests](https://github.com/deboracosilveira/projects_trybe/tree/master/project-16-react-testing-library)*
+##### React & Redux
+- *[Project - Table with data filters](https://github.com/deboracosilveira/projects_trybe/tree/master/project-17-react-redux-starwars-database-filters)*
