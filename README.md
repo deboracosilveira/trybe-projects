@@ -39,3 +39,8 @@ The program has more than **1,500 hours** of classroom and online classes and co
 - *[Project - React Tests](https://github.com/deboracosilveira/projects_trybe/tree/master/project-16-react-testing-library)*
 ##### React & Redux
 - *[Project - Table with data filters](https://github.com/deboracosilveira/projects_trybe/tree/master/project-17-react-redux-starwars-database-filters)*
+#### React & Redux
+- *[Project - Trivia Game](https://github.com/deboracosilveira/projects_trybe/tree/master/project-18-trivia-game)*
+#### React Context API and Hooks
+- *[Project - Datatable StarWars with Context API and Hooks](https://github.com/deboracosilveira/projects_trybe/tree/master/project-19-starwars-datatable-hooks)*
+
