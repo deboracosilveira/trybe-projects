@@ -1,4 +1,5 @@
 # Welcome to the Trivia Game project repository!
+*[Check the deployment](https://trivia-game.deboracosilveira.vercel.app/)*
 
 ## This project includes:
 ### - React
