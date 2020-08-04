@@ -1,0 +1,13 @@
+body {
+  background-color: rgb(96, 102, 208);
+  font-family: Nunito, sans-serif;
+}
+
+.App {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  font-family: Nunito, sans-serif;
+  justify-content: space-around;
+}
