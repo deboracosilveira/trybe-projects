@@ -8,17 +8,18 @@ The program has more than **1,500 hours** of classroom and online classes and co
 
 ## Introduction - Web Development :white_check_mark:
 #### HTML & CSS
-- *[Project - HTML & CSS](https://deboracosilveira.github.io/dog-page/)*
+- *[Project - HTML & CSS](https://github.com/deboracosilveira/projects_trybe/tree/master/project-01-html-css)*
+- *[Project Extra - Alice ](https://github.com/deboracosilveira/projects_trybe/tree/master/project-extra-alice)*
 #### JavaScript
-- *[Project - Meme Generator](https://deboracosilveira.github.io/meme-generator/)*
-- *[Project - Art with Pixels](https://deboracosilveira.github.io/pixels-art/)*
-- *[Project - To Do List](https://deboracosilveira.github.io/to-do-list/)*
-- *[Project - Guess the Color](https://deboracosilveira.github.io/color-guess/)*
-- *[Project - Mysterious Card](https://deboracosilveira.github.io/mistery-letter/)*
+- *[Project - Meme Generator](https://github.com/deboracosilveira/projects_trybe/tree/master/project-02-meme-generator)*
+- *[Project - Art with Pixels](https://github.com/deboracosilveira/projects_trybe/tree/master/project-03-pixels-art)*
+- *[Project - To Do List](https://github.com/deboracosilveira/projects_trybe/tree/master/project-04-todo-list)*
+- *[Project - Guess the Color](https://github.com/deboracosilveira/projects_trybe/tree/master/project-05-color-guess)*
+- *[Project - Mysterious Card](https://github.com/deboracosilveira/projects_trybe/tree/master/project-06-mistery-letter)*
 
 ## Front-end development :hourglass_flowing_sand:
 #### CSS Flexbox
-- *[Project - Facebook home](https://deboracosilveira.github.io/facebook/)*
+- *[Project - Facebook home](https://github.com/deboracosilveira/projects_trybe/tree/master/project-07-facebook-signup)*
 #### JavaScript ES6 & Unit Tests
 - *[Project - JavaScript Unit Tests](https://github.com/deboracosilveira/projects_trybe/tree/master/project-08-js-unit-tests)*
 #### JavaScript ES6
