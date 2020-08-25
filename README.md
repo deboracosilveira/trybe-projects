@@ -45,4 +45,4 @@ The program has more than **1,500 hours** of classroom and online classes and co
 - *[Project - Recipe App](https://github.com/deboracosilveira/projects_trybe/tree/master/Front-end%20development/project-20-recipes-app)*
 ## Back-end development :hourglass_flowing_sand:
 #### Relational Databases
-*[Project - All For One](https://github.com/deboracosilveira/projects_trybe/tree/master/Back-end%20development/project-21-mysql-all-for-one)*
+- *[Project - All For One](https://github.com/deboracosilveira/projects_trybe/tree/master/Back-end%20development/project-21-mysql-all-for-one)*
