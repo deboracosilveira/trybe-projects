@@ -1,4 +1,4 @@
-# Back-end development :white_check_m:
+# Back-end development :white_check_mark:
 #### Relational Databases
 - *[Project - All For One](https://github.com/deboracosilveira/trybe-projects/tree/master/Back-end%20development/project-21-mysql-all-for-one)*
 #### SQL Functions, Joins and Subqueries
