@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Socket.IO - trybe</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="http://chancejs.com/chance.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font: 13px Helvetica, Arial;
+      }
+      label {
+        color: white;
+      }
+      input {
+        border: 0;
+        padding: 10px;
+        width: 90%;
+        margin-right: 0.5%;
+      }
+      button {
+        width: 9%;
+        background: rgb(130, 224, 255);
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+      li {
+        list-style: none;
+      }
+      #info-box {
+        position: fixed;
+        top: 100px;
+        width: 100%;
+        display: flex;
+      }
+      #messages {
+        width: 80%;
+      }
+      #online-users-list {
+        border-left: 1px solid black;
+        padding-left: 10px;
+        width: 20%;
+      }
+      #input-message {
+        background: #000;
+        padding: 3px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+      #input-name {
+        background: #000;
+        padding: 3px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      #user-name {
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="info-box">
+      <ul id="messages"></ul>
+      <p>Online Users</p>
+      <ul id="online-users-list"></ul>
+    </div>
+
+    <div id="input-message">
+      <label>Write your message</label>
+      <input id="message-box" data-testid="message-box" />
+      <button id="send-button" data-testid="send-button">Send</button>
+    </div>
+
+    <div id="input-name">
+      <label>Write your nickname</label>
+      <input id="nickname-box" data-testid="nickname-box" />
+      <button data-testid="nickname-save" id="nickname-save">Change Name</button>
+      <h2 id="user-name"></h2>
+    </div>
+  </body>
+
+  <script>
+    const socket = io();
+
+    const messages = document.getElementById('messages');
+    const messageBox = document.getElementById('message-box');
+    const sendMsgBtn = document.getElementById('send-button');
+    const userNickname = document.getElementById('user-name');
+    const nicknameBox = document.getElementById('nickname-box');
+    const changeNicknameBtn = document.getElementById('nickname-save');
+    const onlineUsersList = document.getElementById('online-users-list');
+
+    let randomName = chance.name();
+    userNickname.innerText = randomName;
+
+    const writeNewMsg = (message) => {
+      const li = document.createElement('li');
+      li.setAttribute('data-testid', 'message');
+      li.innerText = message;
+      messages.appendChild(li);
+    };
+
+    sendMsgBtn.addEventListener('click', () => {
+      const nickname = userNickname.innerText;
+      socket.emit('message', { chatMessage: messageBox.value, nickname: nickname });
+      messageBox.value = '';
+    });
+
+    changeNicknameBtn.addEventListener('click', () => {
+      const newNickname = nicknameBox.value;
+      userNickname.innerText = newNickname;
+      socket.emit('changeNickname', { newNickname });
+      randomName = newNickname;
+      nicknameBox.value = '';
+    });
+
+    const getMessages = (message) => {
+      const li = document.createElement('li');
+      li.setAttribute('data-testid', 'message');
+      li.innerText = message;
+      messages.appendChild(li);
+    };
+
+    const updateOnlineUsers = (onlineUsers) => {
+      onlineUsersList.innerHTML = '';
+
+      onlineUsers.forEach((user) => {
+        const li = document.createElement('li');
+        li.setAttribute('data-testid', 'online-user');
+        li.textContent = user.nickname;
+        onlineUsersList.appendChild(li);
+      });
+    };
+
+    socket.emit('newUser', { nickname: randomName });
+    socket.on('message', writeNewMsg);
+    socket.on('oldMessages', getMessages);
+    socket.on('onlineUsers', updateOnlineUsers);
+  </script>
+</html>
