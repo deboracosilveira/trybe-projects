@@ -2,9 +2,9 @@
 
 This repository contains all projects developed by *[Débora Silveira](https://www.linkedin.com/in/deboracosilveira/)* while studying at [Trybe](https://www.betrybe.com/) :rocket:
 
-*"Trybe is a school of the future that was founded with the purpose of generating significant opportunities for anyone who wants to improve their lives and build a successful career in technology. Assuming a genuine commitment to people, at Trybe they only start paying when they get a good job."*
+A training program with a workload of **1500 hours** that covers front-end, back-end, computer science, software engineering, agile methodologies, and soft skills.
 
-The program has more than **1,500 hours** of classroom and online classes and covers front-end, back-end, computer science, software engineering, agile methodologies, and soft skills.
+The main technical stacks studied are JavaScript, HTML, CSS, React, Node, Express.js, SQL, Git, among others languages and frameworks.
 
 ## Front-end development :white_check_mark:
 #### HTML & CSS
@@ -43,6 +43,42 @@ The program has more than **1,500 hours** of classroom and online classes and co
 #### React Context API and Hooks
 - *[Project - Datatable StarWars with Context API and Hooks](https://github.com/deboracosilveira/projects_trybe/tree/master/Front-end%20development/project-19-starwars-datatable-hooks)*
 - *[Project - Recipe App](https://github.com/deboracosilveira/projects_trybe/tree/master/Front-end%20development/project-20-recipes-app)*
-## Back-end development :hourglass_flowing_sand:
+## Back-end development :white_check_mark:
 #### Relational Databases
 - *[Project - All For One](https://github.com/deboracosilveira/projects_trybe/tree/master/Back-end%20development/project-21-mysql-all-for-one)*
+#### SQL Functions, Joins and Subqueries
+- *[Project - Vocabulary Booster]()*
+#### Database Modeling and Normalization
+- *[Project - One For All]()*
+#### NoSQL - MongoDB
+- *[Project - Data Flights]()*
+#### MongoDB - Updates
+- *[Project - Commerce]()*
+#### MongoDB - Aggregation Framework
+- *[Project - Aggregations]()*
+#### NodeJS - Express and MVC Architecture
+- *[Project - Cookmaster]()*
+#### NodeJS - Service Layer and RESTful Architecture
+- *[Project - Store Manager]()*
+#### NodeJS - Authentication and File Upload
+- *[Project - Cookmaster V2]()*
+#### NodeJS - Heroku Deployment
+- *[Project - Stranger Things: Frontend]()*
+- *[Project - Stranger Things: Backend]()*
+#### NodeJS - Architecture: SOLID and ORM
+- *[Project - Blogs API]()*
+#### NodeJS - Sockets
+- *[Project - Webchat]()*
+## Computer Science :hourglass_flowing_sand:
+#### Computer Architecture and Network
+- *[Project - Exploring the protocols]()*
+#### Python and Web Data Scraping
+- *[Project - Tech News]()*
+#### Object Oriented Programming and Design Patterns
+- *[Project - Inventory Reports]()*
+#### Algorithms and Data Structure
+- *[Project - Algorithms]()*
+#### Data Structure: Hash and Set
+- *[Project - Restaurant Orders]()*
+#### Data Structure: Stacks, Queues and Lists
+- *[Project - Trybe Is Not Google]()*
