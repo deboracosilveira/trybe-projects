@@ -2,7 +2,7 @@
 
 This repository contains all projects developed by *[Débora Silveira](https://www.linkedin.com/in/deboracosilveira/)* while studying at [Trybe](https://www.betrybe.com/) :rocket:
 
-A training program with a workload of **1500 hours** that covers front-end, back-end, computer science, software engineering, agile methodologies, and soft skills.
+The web development training program from Trybe has a workload of **1500 hours** that covers front-end, back-end, computer science, software engineering, agile methodologies, and soft skills.
 
 The main technical stacks studied are JavaScript, HTML, CSS, React, Node, Express.js, SQL, Git, among others languages and frameworks.
 
