@@ -1,4 +1,4 @@
-# Trybe
+# Trybe Projects
 
 This repository contains all projects developed by *[Débora Silveira](https://www.linkedin.com/in/deboracosilveira/)* while studying at [Trybe](https://www.betrybe.com/) :rocket:
 
