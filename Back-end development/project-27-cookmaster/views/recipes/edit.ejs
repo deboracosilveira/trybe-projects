@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cookmaster - Editar</title>
+</head>
+<body>
+  <div>
+    <%- include('../header.ejs', {user}); %>
+    <% if (recipe.userId === user.id) { %>
+    <form action=<%=`/recipes/${recipe.recipeId}`%> method="POST" name="form">
+      <h3>Editar Receita</h3>
+      <div>
+        <div>
+          <label for="namelInput">Nome da receita: </label>
+          <input type="text" name="name" id="namelInput" data-testid="nome-receita" value="<%= recipe.name %>" />
+        </div>
+        <div>
+          <ul id="ingredientList">
+          </ul>
+        </div>
+        <div>
+          <label for="ingredientInput">Adicionar ingrediente: </label>
+          <input type="text" name="ingredients" id="ingredientInput" data-testid="ingredientes" />
+          <button type="button" data-testid="adicionar-ingrediente" onclick="addIng()">
+            Adicionar ingrediente
+          </button>
+        </div>
+        <div>
+          <label for="ingredientInput">Modo de preparo: </label>
+          <textarea data-testid="modo-de-preparo" name="instructions" id="instructions" data-testid="modo-de-preparo">
+                <%= `${recipe.instructions}` %>'
+          </textarea>
+        </div>
+      </div>
+      <div>
+        <div>
+          <a href="/">Voltar</a>
+          <div>
+            <button type="button" data-testid="postar-receita" onclick="submitButton()">
+              Salvar receita
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <% } else { %>
+    <span>Você não tem permissão para editar essa receita.</span>
+    <% } %>
+  </div>
+  <script>
+    const ingredientsSet = new Set();
+    const list = document.getElementById('ingredientList');
+    '<%= recipe.ingredients %>'.split(',').forEach((ingredient) => {
+      const li = document.createElement('li');
+      li.innerHTML = `<span>${ingredient}</span>
+          <button
+            type="button"
+          >
+            Excluir Ingrediente
+          </button>`;
+      li.children[1].onclick = () => {
+        li.remove();
+        ingredientsSet.delete(li.children[0].textContent);
+      };
+      list.appendChild(li);
+      ingredientsSet.add(ingredient);
+    });
+    const addIng = () => {
+      const li = document.createElement('li');
+      const ingredientInput = document.getElementById('ingredientInput');
+      li.innerHTML = `<span>${ingredientInput.value}</span>
+          <button
+            type="button"
+          >
+            Excluir Ingrediente
+          </button>`;
+      li.children[1].onclick = () => {
+        li.remove();
+        ingredientsSet.delete(li.children[0].textContent);
+      };
+      list.appendChild(li);
+      ingredientsSet.add(ingredientInput.value);
+      ingredientInput.value = '';
+    };
+    const submitButton = () => {
+      const ingredientInput = document.getElementById('ingredientInput');
+      ingredientInput.value = [...ingredientsSet].join();
+      document.form.submit();
+    };
+  </script>
+</body>
+</html>

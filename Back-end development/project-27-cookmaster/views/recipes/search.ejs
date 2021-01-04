@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookmaster - Home</title>
+  </head>
+  <body>
+    <%- include('../header.ejs', {user}); %>
+    <h2>Buscar Receitas</h2>
+    <form method="GET">
+      <input type="text" name="q" data-testid="receita" required/>
+      <button type="submit" data-testid="buscar">Buscar</button>
+    </form>
+    <div style="display: flex; flex-wrap: wrap;">
+      <% searchedRecipes.map(recipe => { %>
+      <div
+        style="
+          display: flex;
+          border: 1px solid blue;
+          justify-content: space-between;
+          max-width: 200px;
+          margin: 10px;
+          flex-direction: column;
+          padding: 10px;
+        "
+      >
+        <h3>Receita: <%= recipe.name %></h3>
+        <div>
+          <h4>Autor: <%= recipe.user %></h4>
+          <a href=<%= `/recipes/${recipe.id}` %>>Ver mais</a>
+        </div>
+      </div>
+      <%})%>
+    </div>
+    <div>
+      <% !searchedRecipes.length && userRecipes.map(recipe => { %>
+      <div
+        style="
+          display: flex;
+          border: 1px solid blue;
+          justify-content: space-between;
+          max-width: 200px;
+          margin: 10px;
+          flex-direction: column;
+          padding: 10px;
+        "
+      >
+        <h3>Receita: <%= recipe.name %></h3>
+        <div>
+          <h4>Autor: <%= recipe.user %></h4>
+          <h4>Ingredientes: <%= recipe.ingredients %></h4>
+          <h4>Modo de preparo: <%= recipe.instructions %></h4>
+          <a href=<%= `/recipes/${recipe.id}` %>>Ver mais</a>
+        </div>
+      </div>
+      <%})%>
+    </div>
+  </body>
+</html>

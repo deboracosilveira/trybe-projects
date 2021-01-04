@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookmaster - SignUp</title>
+  </head>
+  <body>
+    <h2>Cookmaster - Cadastro</h2>
+    <form action="/signup" method="POST">
+      <label for="emailInput"
+        >Email <input type="text" name="email" id="emailInput" data-testid="email" /><br />
+        <% if (messages) { %>
+        <div>
+          <span><%= messages.email %></span>
+        </div>
+        <% } %>
+      </label>
+      <label for="passwordInput"
+        >Senha
+        <input type="password" name="password" id="passwordInput" data-testid="senha" /><br />
+        <% if (messages) { %>
+        <div>
+          <span><%= messages.password %></span>
+        </div>
+        <% } %>
+      </label>
+      <label for="passwordInput"
+        >Confirmar Senha
+        <input
+          type="password"
+          name="passwordConfirm"
+          id="passwordConfirmInput"
+          data-testid="confirmar-senha"
+        /><br />
+        <% if (messages) { %>
+        <div>
+          <span><%= messages.confirmPassword %></span>
+        </div>
+        <% } %>
+      </label>
+      <label for="passwordInput">Nome</label>
+      <input type="text" name="firstName" id="fNameInput" data-testid="nome" /><br />
+      <% if (messages) { %>
+      <div>
+        <span><%= messages.firstName %></span>
+      </div>
+      <% } %>
+      <label for="passwordInput"
+        >Sobrenome
+        <input type="text" name="lastName" id="lNameInput" data-testid="sobrenome" /><br />
+        <% if (messages) { %>
+        <div>
+          <span><%= messages.lastName %></span>
+        </div>
+        <% } %>
+      </label>
+      <a data-testid="login" href="/login">Fazer Login</a>
+      <button type="submit" data-testid="cadastrar">Cadastrar-se</button>
+      <% if (done) { %>
+      <span>Cadastro efetuado com sucesso!</span>
+      <% } %>
+    </form>
+  </body>
+</html>

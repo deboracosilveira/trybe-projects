@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cookmaster - Minhas Receitas</title>
+</head>
+<body>
+  <%- include('../header.ejs', {user}); %>
+  <h2>Minhas Receitas</h2>
+  <% if (user) { %>
+    <a data-testid="nova-receita" href="/recipes/new">Nova Receita</a>
+  <% } %>
+  <% if (recipes) { %>
+  <% recipes.forEach(recipe => { %>
+  <div>
+    <div>
+      <span><%= recipe.name %></span>
+      <p><%= recipe.user %></p>
+    </div>
+    <div>
+      <a href=<%= `/recipes/${recipe.id}` %>>Ver mais</a>
+    </div>
+  </div>
+  <% } ) %>
+  <% } %>
+</body>
+</html>
